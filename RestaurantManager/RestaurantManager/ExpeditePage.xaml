@@ -9,9 +9,14 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
+            <RowDefinition/>
             <RowDefinition Height="9*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="1" TextAlignment="Center">Clear All Orders</TextBlock>
+        <AppBar>
+            <AppBarButton Click="AppBarButton_Click">Home</AppBarButton>
+        </AppBar>
+        <GridView Grid.Row="1"></GridView>
+        <Button Grid.Row="2" HorizontalAlignment="Center" Click="Button_Click" >Clear All Orders</Button>
     </Grid>
 </Page>

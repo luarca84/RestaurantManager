@@ -28,7 +28,7 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" FontSize="32" TextAlignment="Center">Restaurant Manager</TextBlock>
         <TextBlock Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" TextAlignment="Center">Internal Test Version</TextBlock>
-        <TextBlock Grid.Row="8" Grid.Column="1"  FontSize="26" TextAlignment="Center">Go to Orders View</TextBlock>
-        <TextBlock Grid.Row="8" Grid.Column="2"  FontSize="26" TextAlignment="Center">Submit Order</TextBlock>
+        <Button Grid.Row="8" Grid.RowSpan="2" Grid.Column="1" Click="Button_Click" HorizontalAlignment="Center">Go to Orders View</Button>
+        <Button Grid.Row="8" Grid.RowSpan="2" Grid.Column="2" Click="Button_Click_1" HorizontalAlignment="Center">Submit Order</Button>
     </Grid>
 </Page>
