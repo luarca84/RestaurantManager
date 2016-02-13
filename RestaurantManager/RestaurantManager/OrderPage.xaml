@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="RestaurantManager.OrderPage"
+    x:Class="RestaurantManager.UniversalWindows.OrderPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager"
@@ -25,8 +25,8 @@
         </AppBar>
         <TextBlock Grid.Row="1" Grid.Column="1">Special Requests:</TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="2">Order Items:</TextBlock>
-        <ListView Grid.Row="2" Grid.Column="0"></ListView>
-        <ListView Grid.Row="2" Grid.Column="2"></ListView>
+        <ListView Grid.Row="2" Grid.Column="0"  DataContext="{StaticResource DataManager}" ItemsSource="{Binding MenuItems}"></ListView>
+        <ListView Grid.Row="2" Grid.Column="2"  DataContext="{StaticResource DataManager}" ItemsSource="{Binding CurrentlySelectedMenuItems}"></ListView>
         <Button Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" Click="Button_Click" >Add to Order</Button>
         <Button Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Click="Button_Click_1">Submit Order</Button>
     </Grid>

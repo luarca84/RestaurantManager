@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 
-namespace RestaurantManager
+namespace RestaurantManager.UniversalWindows
 {
     public sealed partial class ExpeditePage : Page
     {
